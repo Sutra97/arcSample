@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace= "arch.sample.data.repository"
+    namespace = "arch.sample.data.repository"
 }
 
 dependencies {

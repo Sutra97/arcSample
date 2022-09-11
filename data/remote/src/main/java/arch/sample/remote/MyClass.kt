@@ -1,4 +1,3 @@
 package arch.sample.remote
 
-class MyClass {
-}
+class MyClass

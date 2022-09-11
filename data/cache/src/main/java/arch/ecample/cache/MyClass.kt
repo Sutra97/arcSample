@@ -1,4 +1,3 @@
 package arch.ecample.cache
 
-class MyClass {
-}
+class MyClass

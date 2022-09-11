@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace= "arch.sample.framework.interactor"
+    namespace = "arch.sample.framework.interactor"
 }
 
 dependencies {

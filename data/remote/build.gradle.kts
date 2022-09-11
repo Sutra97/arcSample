@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace= "arch.sample.data.remote"
+    namespace = "arch.sample.data.remote"
 }
 
 dependencies {

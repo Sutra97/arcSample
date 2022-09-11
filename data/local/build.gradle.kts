@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace= "arch.sample.data.local"
+    namespace = "arch.sample.data.local"
 }
 
 dependencies {

@@ -1,4 +1,3 @@
 package arch.sample.local
 
-class MyClass {
-}
+class MyClass

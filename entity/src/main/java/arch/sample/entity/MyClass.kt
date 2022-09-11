@@ -1,4 +1,3 @@
 package arch.sample.entity
 
-class MyClass {
-}
+class MyClass

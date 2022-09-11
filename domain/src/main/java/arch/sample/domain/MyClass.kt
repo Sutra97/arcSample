@@ -1,4 +1,3 @@
 package arch.sample.domain
 
-class MyClass {
-}
+class MyClass

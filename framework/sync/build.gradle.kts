@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace= "arch.sample.framework.sync"
+    namespace = "arch.sample.framework.sync"
 }
 
 dependencies {
