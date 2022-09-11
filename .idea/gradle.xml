@@ -37,7 +37,10 @@
             <option value="$PROJECT_DIR$/framework/sync" />
             <option value="$PROJECT_DIR$/presentation" />
             <option value="$PROJECT_DIR$/presentation/common" />
-            <option value="$PROJECT_DIR$/presentation/home-feature" />
+            <option value="$PROJECT_DIR$/presentation/feature" />
+            <option value="$PROJECT_DIR$/presentation/feature/home" />
+            <option value="$PROJECT_DIR$/presentation/feature/home/api" />
+            <option value="$PROJECT_DIR$/presentation/feature/home/impl" />
             <option value="$PROJECT_DIR$/sync" />
           </set>
         </option>

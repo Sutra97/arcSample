@@ -1,3 +1,4 @@
+
 /*
  * Copyright 2022 The Android Open Source Project
  *
@@ -17,7 +18,7 @@ plugins {
     `kotlin-dsl`
 }
 
-group = "com.arch.sample.buildlogic"
+group = "arch.sample.buildlogic"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_1_8

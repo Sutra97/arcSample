@@ -35,12 +35,20 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 }
             }
-           /*
+
                 val libs = extensions.getByType<VersionCatalogsExtension>().named("libs")
                 dependencies {
-                   // Todo add common modules and libraries
+                    add("implementation", project(":domain"))
+                    add("implementation", project(":entity"))
+                    add("implementation", project(":framework:interactor"))
+                    add("implementation", project(":presentation:common"))
+                    //hilt
+                    add("implementation", libs.findLibrary("androidx.hilt.navigation.compose").get())
+                    add("implementation", libs.findLibrary("hilt.android").get())
+                    add("kapt", libs.findLibrary("hilt.compiler").get())
+
                 }
-            */
+
         }
     }
 }

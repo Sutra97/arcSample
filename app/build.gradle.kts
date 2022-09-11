@@ -3,7 +3,7 @@ plugins {
     id("arch.sample.android.application.compose")
 }
 android {
-    namespace = "com.arch.sample"
+    namespace = "arch.sample"
     defaultConfig {
         applicationId = BuildConfig.applicationId
         versionCode = BuildConfig.versionCode
@@ -14,10 +14,15 @@ android {
 // Versions are declared in gradle/libs.versions.toml
 dependencies {
     // splash screen
-    implementation(libs.splashScreen)
-    // ===== compose =====
-    implementation(libs.composeActivity)
-    implementation(libs.composeMaterial)
+    implementation(libs.splashscreen)
+    // compose
+    implementation(libs.compose.ui)
+    implementation(libs.compose.activity)
+    implementation(libs.compose.material)
+    implementation(libs.compose.animation)
+    debugImplementation(libs.compose.tooling)
+    implementation(libs.accompanist.navigation)
+    // app layers
     implementation(projects.entity)
     implementation(projects.domain)
     implementation(projects.data.repository)
@@ -25,7 +30,9 @@ dependencies {
     implementation(projects.data.remote)
     implementation(projects.data.local)
     implementation(projects.framework.sync)
-    implementation(project(mapOf("path" to ":presentation:common")))
-    implementation(project(mapOf("path" to ":presentation:home-feature")))
-    debugImplementation(libs.composeTooling)
+    implementation(projects.framework.interactor)
+    // presentation
+    implementation(projects.presentation.common)
+    // home feature
+    implementation(projects.presentation.feature.home.impl)
 }
