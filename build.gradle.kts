@@ -1,9 +1,10 @@
 import org.jlleitschuh.gradle.ktlint.KtlintExtension
 plugins {
+    alias(libs.plugins.android.application) apply false
+    alias(libs.plugins.kotlin.jvm) apply false
+    alias(libs.plugins.kotlin.serialization) apply false
+    alias(libs.plugins.hilt) apply false
     alias(libs.plugins.ktlint)
-    id("com.android.library") version "7.3.0-rc01" apply false
-    id("org.jetbrains.kotlin.android") version "1.6.21" apply false
-    id("org.jetbrains.kotlin.jvm") version "1.6.21" apply false
 }
 
 buildscript {

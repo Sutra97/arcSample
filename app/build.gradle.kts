@@ -1,6 +1,9 @@
+
 plugins {
     id("arch.sample.android.application")
     id("arch.sample.android.application.compose")
+    kotlin("kapt")
+    id("dagger.hilt.android.plugin")
 }
 android {
     namespace = "arch.sample"
@@ -35,4 +38,8 @@ dependencies {
     implementation(projects.presentation.common)
     // home feature
     implementation(projects.presentation.feature.home.impl)
+    // hilt
+    implementation(libs.hilt.android)
+    kapt(libs.hilt.compiler)
+    kaptAndroidTest(libs.hilt.compiler)
 }

@@ -10,6 +10,7 @@ android {
 dependencies {
     api(libs.compose.material)
     api(libs.accompanist.navigation)
+    implementation(libs.hilt.android)
 
     /*
       implementation(libs.androidx.core.ktx)

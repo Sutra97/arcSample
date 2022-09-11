@@ -12,7 +12,6 @@ composeCompiler =  "1.3.0"
 accompanist = "0.26.2-beta"
 coroutines = "1.6.4"
 androidxWindow = "1.0.0"
-androidxnavigation = "2.5.0-rc02"
 coil = "1.3.2"
 junit4 = "4.13.2"
 androidxTestExt = "1.1.3"
@@ -44,7 +43,6 @@ compose-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.r
 compose-animation ={ module = "androidx.compose.animation:animation"  , version.ref = "compose" }
 compose-MaterialIconsExtended = {module =  "androidx.compose.material:material-icons-extended", version.ref = "compose"  }
 compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "androidxActivity" }
-compose-navigation = { module = "androidx.navigation:navigation-compose", version.ref = "androidxnavigation" }
 compose-coil = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
 compose-viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "androidxLifecycle" }
 lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidxLifecycle" }
@@ -87,7 +85,9 @@ hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testi
 [plugins]
 ktlint = {id="org.jlleitschuh.gradle.ktlint" , version.ref="ktlint"}
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
 
 

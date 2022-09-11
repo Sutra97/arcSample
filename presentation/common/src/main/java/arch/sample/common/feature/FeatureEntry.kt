@@ -2,7 +2,7 @@ package arch.sample.common.feature
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.*
-import androidx.navigation.compose.composable
+import com.google.accompanist.navigation.animation.composable
 
 typealias Destinations = Map<Class<out FeatureEntry>, @JvmSuppressWildcards FeatureEntry>
 
@@ -23,7 +23,11 @@ interface FeatureEntry {
 interface ComposableFeatureEntry : FeatureEntry {
 
     fun NavGraphBuilder.composable(navController: NavHostController, destinations: Destinations) {
-        composable(featureRoute, arguments, deepLinks) { backStackEntry ->
+        composable(
+            route = featureRoute,
+            arguments = arguments,
+            deepLinks = deepLinks
+        ) { backStackEntry ->
             Composable(navController, destinations, backStackEntry)
         }
     }

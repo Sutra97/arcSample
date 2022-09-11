@@ -29,6 +29,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
                 apply("org.jetbrains.kotlin.kapt")
+                apply("dagger.hilt.android.plugin")
             }
             extensions.configure<LibraryExtension> {
                 defaultConfig {
